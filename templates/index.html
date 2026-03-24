@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reham Portfolio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="bg-shapes">
+    <span class="shape shape1"></span>
+    <span class="shape shape2"></span>
+    <span class="shape shape3"></span>
+    <span class="shape shape4"></span>
+  </div>
+
+  <header class="navbar">
+    <div class="logo">Reham Abuarqoub</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero section">
+    <div class="hero-text reveal">
+      <p class="intro-badge">Welcome to my portfolio</p>
+      <h1>Hello, I’m <span class="gradient-text">Reham</span></h1>
+      <h2><span id="typing"></span></h2>
+      <p class="hero-description">
+        I build AI, analytics, and automation solutions using Python,
+        Power Platform, and data tools.
+      </p>
+
+      <div class="hero-buttons">
+        <a class="btn" href="#projects">View My Work</a>
+        <a class="btn btn-outline" href="#contact">Contact Me</a>
+      </div>
+    </div>
+
+    <div class="hero-image reveal">
+      <div class="image-ring ring-one"></div>
+      <div class="image-ring ring-two"></div>
+      <div class="image-wrapper">
+        <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Reham portrait">
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section reveal">
+    <h2>About Me</h2>
+    <p>
+      I am an Applied AI and Machine Learning student with experience in
+      data analysis, dashboards, automation, and digital transformation.
+      I enjoy building smart, user-friendly solutions that make work easier
+      and more efficient.
+    </p>
+  </section>
+
+  <section id="skills" class="section reveal">
+    <h2>Skills</h2>
+    <div class="cards">
+      <div class="card skill-card">Python</div>
+      <div class="card skill-card">Flask</div>
+      <div class="card skill-card">Power BI</div>
+      <div class="card skill-card">SQL</div>
+      <div class="card skill-card">Machine Learning</div>
+      <div class="card skill-card">Power Automate</div>
+    </div>
+  </section>
+
+  <section id="projects" class="section reveal">
+    <h2>Projects</h2>
+    <div class="cards">
+      <div class="card project-card">
+        <h3>HR Benefits Virtual Assistant</h3>
+        <p>Copilot Studio + Power Automate assistant for employee support.</p>
+      </div>
+      <div class="card project-card">
+        <h3>Sustainable AI Project</h3>
+        <p>Prompt optimization and energy-aware AI workflow app.</p>
+      </div>
+      <div class="card project-card">
+        <h3>NeuraPath</h3>
+        <p>AI-based career and interview preparation platform.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section reveal">
+    <h2>Contact</h2>
+    <div class="contact-box">
+      <p><strong>Email:</strong> rehamabuarqoub94@gmail.com</p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/RehamAbuarqoub" target="_blank">github.com/RehamAbuarqoub</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/reham-abu-arqoub" target="_blank">linkedin.com/in/reham-abu-arqoub</a></p>
+    </div>
+  </section>
+
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
