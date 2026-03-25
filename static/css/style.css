@@ -170,7 +170,14 @@ body {
   font-size: 28px;
   color: #cbd5e1;
   margin-bottom: 18px;
-  min-height: 40px;
+  min-height: 42px;   /* keeps vertical space ثابت */
+}
+
+#typing {
+  display: inline-block;
+  min-width: 28ch;    /* keeps horizontal space stable */
+  white-space: nowrap;
+  text-align: left;
 }
 
 .hero-description {
