@@ -1,7 +1,7 @@
 const words = [
-  "AI & ML Engineer",
+  "AI / ML Engineer",
   "Data Analyst",
-  "Automation Builder",
+  "Automation Specialist",
   "Python Developer"
 ];
 
