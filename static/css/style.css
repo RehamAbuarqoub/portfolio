@@ -131,7 +131,7 @@ body {
 .section {
   position: relative;
   z-index: 1;
-  padding: 90px 40px;
+  padding: 45px 40px;
   max-width: 1150px;
   margin: auto;
 }
@@ -448,4 +448,73 @@ body {
     width: 340px;
     height: 340px;
   }
+}
+.skills-grid {
+  margin-bottom: 28px;
+}
+
+.skill-button {
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  width: 100%;
+}
+
+.skill-button:hover {
+  transform: translateY(-8px) scale(1.03);
+}
+
+.skill-button.active {
+  box-shadow:
+    0 0 18px rgba(192, 132, 252, 0.35),
+    0 0 28px rgba(125, 211, 252, 0.18);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.skill-details-box {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 10px 30px rgba(192, 132, 252, 0.14),
+    0 10px 30px rgba(125, 211, 252, 0.10);
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-details-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1.5px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #c084fc, #7dd3fc, #f9a8d4);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0.9;
+}
+
+.skill-details-box h3 {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 12px;
+  font-size: 24px;
+  background: linear-gradient(90deg, #c084fc, #7dd3fc, #f9a8d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skill-details-box p {
+  position: relative;
+  z-index: 1;
+  color: #dbe4f0;
+  font-size: 16px;
+  line-height: 1.8;
 }

@@ -1,5 +1,5 @@
 const words = [
-  "AI & ML Student",
+  "AI & ML Engineer",
   "Data Analyst",
   "Automation Builder",
   "Python Developer"
@@ -50,6 +50,20 @@ function revealOnScroll() {
     }
   });
 }
+
+const skillButtons = document.querySelectorAll(".skill-button");
+const skillTitle = document.getElementById("skillTitle");
+const skillDescription = document.getElementById("skillDescription");
+
+skillButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    skillButtons.forEach((btn) => btn.classList.remove("active"));
+    button.classList.add("active");
+
+    skillTitle.textContent = button.dataset.title;
+    skillDescription.textContent = button.dataset.detail;
+  });
+});
 
 window.addEventListener("scroll", revealOnScroll);
 window.addEventListener("load", revealOnScroll);
